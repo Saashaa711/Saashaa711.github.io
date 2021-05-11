@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="container d-none">
         <div class="row">
             <div class="col-12">
                 <div class="owl-carousel owl-carousel-header owl-theme">
@@ -39,6 +39,57 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="consultation">
+                    <h2>Консультация/<br>Обратный звонок</h2>
+                    <a href="#consultation" class="button popup-with-move-anim" data-form="Записаться на консультацию">Записаться</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-none">
+        <form class="popup-form consultation zoom-anim-dialog" id="consultation">
+            <div class="success">Спасибо за заявку! <br>
+            Наши специалисты свяжутся с вами в ближайшее время!</div>
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Podolog">
+            <input type="hidden" name="admin_email" value="Saashaa_site@mail.ru">
+            <input type="hidden" name="form_subject" value="Заявка на консультацию с сайта Podolog">
+            <!-- END Hidden Required Fields -->
+
+            <h3>Запишитесь на консультацию!</h3>
+            <p>Заполните данные и наши специалисты свяжутся с Вами в ближайшее время.</p>
+            <label>
+                <span>Ваше имя:</span>
+                <input type="text" name="Имя" placeholder="Введите ваше имя..." required>
+            </label>
+            <label>
+                <span>Ваш телефон:</span>
+                <input type="text" name="Телефон" placeholder="Введите ваш телефон..." required>
+            </label>
+            <div class="text-center">
+                <button class="button">Отправить</button>
+            </div>
+
+            <div class="konfid">
+                <label class="d-inline-flex">
+                  <input class="checkbox" type="checkbox" onchange="document.getElementById('but').disabled = !this.checked" checked="">
+                  <span class="new-checkbox"></span>
+                  <span class="consent">Даю свое согласие на обработкутку персональных данных<br>
+                      С <a href="#">Политикой конфиденциальности</a> ознакомился</span>
+                      </label>
+              </div>
+
+            <input class="formname" type="hidden" name="Форма">
+        </form>
     </div>
 
 
