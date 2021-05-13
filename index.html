@@ -19,7 +19,29 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-md-12 d-md-block d-none">
+
+
+                <div class="col-lg-4 col-md-2 col-4">
+                    <div class="insta-search">
+                        <a class="search" href="#"><i class="fas fa-search"></i></a>
+                        <div class="search-field">
+                            <form class="simplesearch-search-form" action="[[~[[+landing]]]]" method="[[+method]]">
+                                <fieldset>
+                                    
+                                    <input type="text" name="[[+searchIndex]]" value="" placeholder="Поиск по сайту..." />
+                                    <input type="hidden" name="id" value="#" />
+                                    <input type="hidden" name="cx" value="partner-pub-xxx:xxx" />
+                                    <input type="hidden" name="cof" value="FORID:10" />
+                                    <input type="hidden" name="ie" value="UTF-8" />
+                            
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-8 d-md-block d-none">
                     <div class="main-menu">
                         <nav>
                             <ul>
@@ -32,39 +54,40 @@
                         </nav>
                     </div>
                 </div>
+                <nav id="my-menu">
+							
+                    <!-- <form class="simplesearch-search-form" action="[[~[[+landing]]]]" method="[[+method]]">
+                        <fieldset>
+                            
+                            <input type="text" name="[[+searchIndex]]" value="" placeholder="Поиск по сайту..." />
+                            <input type="hidden" name="id" value="#" />
+                            <input type="hidden" name="cx" value="partner-pub-xxx:xxx" />
+                            <input type="hidden" name="cof" value="FORID:10" />
+                            <input type="hidden" name="ie" value="UTF-8" />
+                    
+                        </fieldset>
+                    </form> -->
+                
+                <ul>
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        
+            <div class="hamburger col-8 d-block d-md-none d-xl-none">
+                <a class="mburger mburger--collapse" href="#my-menu">
+                    <b></b>
+                    <b></b>
+                    <b></b>
+                </a>
+            </div>
             </div>
         </div>
 
-        <nav id="my-menu">
-							
-            <!-- <form class="simplesearch-search-form" action="[[~[[+landing]]]]" method="[[+method]]">
-                <fieldset>
-                    
-                    <input type="text" name="[[+searchIndex]]" value="" placeholder="Поиск по сайту..." />
-                    <input type="hidden" name="id" value="#" />
-                    <input type="hidden" name="cx" value="partner-pub-xxx:xxx" />
-                    <input type="hidden" name="cof" value="FORID:10" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-            
-                </fieldset>
-            </form> -->
         
-        <ul>
-            <li class="active"><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
-
-    <div class="hamburger col-12 d-block d-md-none d-xl-none">
-        <a class="mburger mburger--collapse" href="#my-menu">
-            <b></b>
-            <b></b>
-            <b></b>
-        </a>
-    </div>
 
     <div class="container">
         <div class="row">
